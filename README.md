@@ -8,14 +8,14 @@ Neste desafio, vamos simular um sistema bancário com diferentes tipos de conta,
 
 ## 🧱 Requisitos
 ### Classes obrigatórias
-#### 1. `Cliente`
+#### 1. `org.example.domain.Cliente`
 - Atributos privados:
   - `nome` (String)
   - `cpf` (String)
  
-#### 2. `Conta`
+#### 2. `org.example.domain.Conta`
 - Atributos privados:
-  - `titular` (Cliente)
+  - `titular` (org.example.domain.Cliente)
   - `numero` (int)
   - `saldo` (double)
 - Métodos públicos:
@@ -23,13 +23,13 @@ Neste desafio, vamos simular um sistema bancário com diferentes tipos de conta,
   - `sacar`(double valor)
   - `verSaldo()`
 
-#### 3. `ContaCorrente` (herda de Conta)
+#### 3. `ContaCorrente` (herda de org.example.domain.Conta)
 - Taxa de saque (ex: 0.5%)
 - Método sacar() sobrescrito com lógica de taxa
 
-#### 4. `ContaPoupanca` (herda de Conta)
+#### 4. `ContaPoupanca` (herda de org.example.domain.Conta)
 - Rende juros (simular renderJuros() que adiciona 1% ao saldo)
 
 #### 5. `Main`
-- Criar um `Cliente`, uma `ContaCorrente` e uma `ClientePoupanca`.
+- Criar um `org.example.domain.Cliente`, uma `ContaCorrente` e uma `ClientePoupanca`.
 - Realizar depósitos, saques, ver saldo, aplicar juros (na poupança)
