@@ -5,7 +5,7 @@ public class Main {
        
         
         // Criando um cliente
-        Cliente cliente = new Cliente("João Silva", "123.456.789-00");
+        Cliente cliente = new Cliente("Thiago Sales", "123.456.789-00");
         System.out.printf("Cliente: %s | CPF: %s%n", cliente.getNome(), cliente.getCpf());
       
         
