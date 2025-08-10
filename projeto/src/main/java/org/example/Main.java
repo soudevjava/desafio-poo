@@ -2,7 +2,7 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+       
         
         // Criando um cliente
         Cliente cliente = new Cliente("João Silva", "123.456.789-00");
